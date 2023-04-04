@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.homepage {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+}
+.homepage .textwrapper {
+  height: 50vh;
+  width: 100%;
+}
+.homepage .textwrapper .name {
+  width: 100%;
+  font-size: 30px;
+}
+.homepage .navwrapper {
+  height: 50vh;
+  width: 100%;
+}
+.homepage .navwrapper .navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: stretch;
+  width: 100%;
+  background-color: black;
+}
+.homepage .navwrapper .navbar a {
+  color: white;
+  text-decoration: none;
+}
+.homepage .navwrapper .expendbar {
+  color: white;
+  background-color: black;
+  height: 0px;
+  width: 100%;
+  transition: height 0.5s;
+}
+.homepage .navwrapper .expendbar p {
+  margin: 0;
+}
+.homepage .navwrapper .expended {
+  height: 200px;
+}
+
+.aboutme {
+  width: 100%;
+  height: 100vh;
+  background-color: yellow;
+}
+
+.projectwrapper {
+  background-color: blue;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+.projectwrapper .slickwrapper {
+  width: 65%;
+}
+.projectwrapper .slickwrapper .project {
+  margin: 20px 0;
+  height: 600px;
+  background-color: lightblue;
+}
+.projectwrapper .leftblock {
+  width: 25%;
+  height: 400px;
+}
+
+.personalprojecten {
+  width: 100%;
+  height: 100vh;
+  background-color: orange;
+}
+
+.timelapse {
+  width: 100%;
+  height: 100vh;
+  background-color: red;
+}
+
+.contact {
+  width: 100%;
+  height: 100vh;
+  background-color: grey;
+}
+
+/*# sourceMappingURL=style.css.map */
