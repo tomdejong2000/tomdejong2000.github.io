@@ -1,6 +1,17 @@
 $maincolor: blue
 $subcolor1: lightblue
 $darkcolor1: #222222
+$menufont: Gruppo
+
+@font-face 
+    font-family: 'Gruppo'
+    src: url(../fonts/Gruppo-Regular.ttf)
+
+@font-face 
+    font-family: 'Poppins'
+    src: url(../fonts/Poppins-ExtraLight.ttf)
+
+
 
 body
     margin: 0
@@ -20,14 +31,17 @@ html
     .textwrapper
         height: 50vh
         width: 100%
+        
         .name
             width: 100%
+            font-family: Poppins
             
             font-size: 30px
 
     .navwrapper
         height: 50vh
         width: 100%
+        font-family: $menufont
         .nobg
             background: rgba(0,0,0,0) !important
         .navbar
@@ -41,6 +55,7 @@ html
             background-color: $darkcolor1
             height: 50px
             z-index: 3
+            font-weight: 900
 
             
             a
@@ -69,7 +84,8 @@ html
 
             p
                 margin: 0
-                color: grey
+                color: rgb(20, 19, 19)
+                font-weight: 100
                 
         .expended  
             height: 200px 
