@@ -79,9 +79,22 @@ html {
   width: 100%;
   height: 100vh;
   background-color: yellow;
+  position: relative;
 }
 .aboutme h2 {
   font-size: 200px;
+}
+.aboutme .iam {
+  left: -1000px;
+  position: relative;
+  width: 100px;
+}
+.aboutme .gotoschool {
+  left: 350px;
+  top: 100px;
+}
+.aboutme .textwrapper {
+  margin-left: 400px;
 }
 
 .projectwrapper {

@@ -44,4 +44,11 @@ $( document ).ready(function() {
 
 
 
+    $('.school').hover(function(){
+        $('.iam').toggleClass('gotoschool')
+        
+    })
+
+
+
 });
