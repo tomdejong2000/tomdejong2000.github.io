@@ -1,6 +1,7 @@
 $maincolor: blue
 $subcolor1: lightblue
 $darkcolor1: #222222
+$whitebg1: #cacfd6
 $menufont: Gruppo
 
 @font-face 
@@ -11,23 +12,57 @@ $menufont: Gruppo
     font-family: 'Poppins'
     src: url(../fonts/Poppins-ExtraLight.ttf)
 
-
+#pp-nav
+    margin-top: 300px !important
+    margin-left: -50px !important
 
 body
     margin: 0
+    .navbar2
+        margin-top: -10px
+
+        width: 100%
+        font-family: $menufont
+
+        display: flex
+        flex-direction: row
+        flex-wrap: nowrap
+        justify-content: space-evenly
+        align-items: center
+        align-content: stretch
+        width: 100%
+        background-color: $darkcolor1
+        height: 50px
+        z-index: 3
+        font-weight: 900
+
+            
+        a
+            color: white
+            text-decoration: none
+            font-weight: bolder
+            padding-top: 20px
+            padding-bottom: 20px
+            
+            transition-duration: 0.2s
+            
+            &:hover
+                margin-top: 20px
+        
 
 html
     scroll-behavior: smooth
 
 .homepage
-    width: 100%
-    height: 100vh
+    //width: 100%
+    //height: 100vh
     display: flex
     flex-direction: column
     flex-wrap: nowrap
     justify-content: space-between
     align-items: center
     align-content: stretch
+    background-color: $whitebg1
     .textwrapper
         height: 50vh
         width: 100%
@@ -37,6 +72,8 @@ html
             font-family: Poppins
             
             font-size: 30px
+
+
 
     .navwrapper
         height: 50vh
@@ -95,10 +132,11 @@ html
 
 
 .aboutme
-    width: 100%
-    height: 100vh
+    //width: 100%
+    //height: 100vh
     background-color: yellow   
-    position: relative
+    //position: relative
+    
     h2
         font-size: 200px  
     .iam
@@ -114,25 +152,26 @@ html
 
 .projectwrapper
     background-color: $maincolor
-    width: 100%
-    height: 100vh
-    display: flex
-    flex-direction: row
-    flex-wrap: nowrap
-    justify-content: center
-    align-items: center
-    align-content: stretch
 
-    .slickwrapper
-        width: 65%
-        .project
-            margin: 20px 0
-            height: 600px
-            background-color: $subcolor1
 
-    .leftblock
-        width: 25%
-        height: 400px
+    .contentwrapper
+        display: flex
+        flex-direction: row
+        flex-wrap: nowrap
+        justify-content: center
+        align-items: center
+        align-content: stretch
+
+        .slickwrapper
+            width: 65%
+            .project
+                margin: 20px 0
+                height: 600px
+                background-color: $subcolor1
+
+        .leftblock
+            width: 25%
+            height: 400px
 
 
 .personalprojecten

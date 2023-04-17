@@ -1,7 +1,16 @@
 $( document ).ready(function() {
     console.log( "ready!" );
 
-
+    $('#pagepiling').pagepiling({
+        anchors: ['home','aboutme','schoolprojects','timelapse','contact'],
+        verticalCentered: false,
+        navigation: {
+            'textColor': '#000',
+            'bulletsColor': '#000',
+            'position': 'right',
+            
+        },
+    });
 
 
 
@@ -26,14 +35,9 @@ $( document ).ready(function() {
         $('.expendtext').text("school projects")
         $('.navbar').toggleClass("nobg")
     })
-    $('.personallink').hover(function() {
-        $('.expendbar').toggleClass("expended")
-        $('.expendtext').text("personal projects")
-        $('.navbar').toggleClass("nobg")
-    })
     $('.timelink').hover(function() {
         $('.expendbar').toggleClass("expended")
-        $('.expendtext').text("timelapse")
+        $('.expendtext').text("timeline")
         $('.navbar').toggleClass("nobg")
     })
     $('.contactlink').hover(function() {

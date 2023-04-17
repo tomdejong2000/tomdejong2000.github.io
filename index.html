@@ -5,24 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <title>Portfolio Tom de Jong</title>
-    <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <title>Portfolio Tom de Jong</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.js" integrity="sha512-5d8vqNar4es3c5P8GOy4SzaFJKEIIjDJhoaO/akcn/u+Ynj5gukMF7FgG1AEAPSIDVjEeFh+dpT6j42s6vxCkg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.css" integrity="sha512-xbp9DExL/1FLDKhQIJNwoCaBjPytQcPMg82UsbBq02kckLcVzQms0+Ot54jXwuBjR6M91vaYHSmqrZlQ/nOEAQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     
 </head>
 <body>
-    <div class=homepage>
+
+    <div id="pagepiling">
+    <div class="section homepage">
         <div class="textwrapper">
             <div class="name"><h1>Tom de Jong</h1></div>
-            <div class="desc"><h2>student ofzo</h2></div>
+            <div class="desc"><h2>student (cool)</h2></div>
+
+
         </div>
         <div class="navwrapper">
             <div class="navbar">
                 <a class="aboutmelink" href=#aboutme>about me</a>
                 <a class="schoollink" href=#schoolprojects>school projects</a>
-                <a class="personallink" href=#personalprojecten>personal projects</a>
-                <a class="timelink" href=#timelapse>time lapse</a>
+                <a class="timelink" href=#timelapse>time line</a>
                 <a class="contactlink" href=#contact>contact</a>
 
             </div>
@@ -33,7 +41,15 @@
         </div>
     </div> 
 
-    <div id="aboutme" class="aboutme">
+    <div id="aboutme" class="section aboutme">
+        <div class="navbar2">
+            <a class="homelink" href="#home">home</a>
+            <a class="aboutmelink" href=#aboutme>about me</a>
+            <a class="schoollink" href=#schoolprojects>school projects</a>
+            <a class="timelink" href=#timelapse>time line</a>
+            <a class="contactlink" href=#contact>contact</a>
+
+        </div>
 
         <h2>ABOUT ME</h2>
         <p class="iam">I am</p>
@@ -47,7 +63,16 @@
     </div>
 
 
-    <div id="schoolprojects" class=projectwrapper>
+    <div id="schoolprojects" class="section projectwrapper">
+        <div class="navbar2">
+            <a class="homelink" href="#home">home</a>
+            <a class="aboutmelink" href=#aboutme>about me</a>
+            <a class="schoollink" href=#schoolprojects>school projects</a>
+            <a class="timelink" href=#timelapse>time line</a>
+            <a class="contactlink" href=#contact>contact</a>
+
+        </div>
+        <div class="contentwrapper">
         <div class=leftblock>
         <h1>School projects</h1>
         </div>
@@ -58,23 +83,30 @@
             <div class="project projec56">project5</div>
             <div class="project projec78">project7</div>           
         </div>
+        </div>
     </div>
 
-    <div id="personalprojecten" class="personalprojecten">
+    <div id="timelapse" class="section timelapse">
+        <div class="navbar2">
+            <a class="homelink" href="#home">home</a>
+            <a class="aboutmelink" href=#aboutme>about me</a>
+            <a class="schoollink" href=#schoolprojects>school projects</a>
+            <a class="timelink" href=#timelapse>time line</a>
+            <a class="contactlink" href=#contact>contact</a>
+
+        </div>
 
     </div>
 
-    <div id="timelapse" class="timelapse">
-
-    </div>
-
-    <div id="contact" class="contact">
+    <div id="contact" class="section contact">
         <h2>CONTACT ME :)</h2>
         <div class="linkswrapper">
             <p class="email">tomdejong2000@gmail.com</p>
             <p class="github">githublink</p>
             <p class="linkedin">linkedinlink</p>
         </div>
+        <a href="#home"><div >up</div></a>
+    </div>
     </div>
 
     <script src="js/script.js"></script>
