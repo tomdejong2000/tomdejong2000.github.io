@@ -1,8 +1,10 @@
 $maincolor: blue
 $subcolor1: lightblue
 $darkcolor1: #222222
+$darkercolor: rgb(20, 19, 19)
 $whitebg1: #cacfd6
 $menufont: Gruppo
+$mainblue: #2854a1
 
 @font-face 
     font-family: 'Gruppo'
@@ -31,7 +33,7 @@ body
         align-items: center
         align-content: stretch
         width: 100%
-        background-color: $darkcolor1
+        
         height: 50px
         z-index: 3
         font-weight: 900
@@ -134,25 +136,65 @@ html
 .aboutme
     //width: 100%
     //height: 100vh
-    background-color: yellow   
+    background-color: $darkcolor1
     //position: relative
     
     h2
-        font-size: 200px  
-    .iam
-        left: -1000px
-        position: relative
-        width: 100px
-    .gotoschool
-        left: 350px
-        top: 100px
-    .textwrapper
-        margin-left: 400px
+        font-size: 100px 
+        color: $whitebg1 
+        border-bottom: 8px solid $mainblue
+        width: 490px
+        font-family: Poppins
+        margin-left: 10px
+        height: 120px
+    .contentwrapper
+        display: flex
+        flex-direction: column
+        flex-wrap: nowrap
+        justify-content: space-between
+        align-items: center
+        align-content: center
+        width: 70%
+        margin: auto
+
+        .text
+            color: $whitebg1
+            
+            display: flex
+            flex-direction: row
+            flex-wrap: nowrap
+            justify-content: space-between
+            align-items: center
+            align-content: center
+            width: 100%
+            
+
+        .skillwrapper
+            display: flex
+            flex-direction: row
+            flex-wrap: nowrap
+            justify-content: space-between
+            align-items: center
+            align-content: center
+            width: 100%
+            .skillblock
+                width: 300px
+                height: 300px
+                color: $whitebg1
+                background-color: $mainblue
+                text-align: center
+        
         
 
 .projectwrapper
-    background-color: $maincolor
-
+    background-color: $darkercolor
+    h2
+        font-size: 70px 
+        color: $whitebg1 
+        margin: 0
+        border-left: 10px $mainblue solid
+        font-family: Poppins
+        margin-left: 10px
 
     .contentwrapper
         display: flex
@@ -164,20 +206,44 @@ html
 
         .slickwrapper
             width: 65%
+            .slick-arrow
+                margin-left: -100px
+            .slick-prev
             .project
                 margin: 20px 0
                 height: 600px
-                background-color: $subcolor1
+                background-color: $darkcolor1
 
         .leftblock
             width: 25%
             height: 400px
+            color: $whitebg1
+            display: flex
+            flex-direction: row
+            flex-wrap: nowrap
+            justify-content: space-around
+            align-items: center
+            align-content: center
+            p
+                width: 60%
+            .customnext
+
+            .customback
+
+            button
+                width: 50px
+                height: 50px
+                
+                background-color: $darkcolor1
+                border: 0
 
 
-.personalprojecten
-    width: 100%
-    height: 100vh
-    background-color: orange
+                
+
+
+
+
+
 
 .timelapse
     width: 100%

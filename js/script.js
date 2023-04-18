@@ -21,7 +21,9 @@ $( document ).ready(function() {
         slidesToScroll: 3,
         vertical: true,
         verticalSwiping: true,
-        arrows: true
+        arrows: true,
+        prevArrow: $('.customback'),
+        nextArrow: $('.customnext')
     })
 
 
@@ -47,11 +49,6 @@ $( document ).ready(function() {
     })
 
 
-
-    $('.school').hover(function(){
-        $('.iam').toggleClass('gotoschool')
-        
-    })
 
 
 
