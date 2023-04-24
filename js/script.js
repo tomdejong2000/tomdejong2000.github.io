@@ -1,16 +1,17 @@
 $( document ).ready(function() {
     console.log( "ready!" );
-
-    $('#pagepiling').pagepiling({
-        anchors: ['home','aboutme','schoolprojects','timelapse','contact'],
-        verticalCentered: false,
-        navigation: {
-            'textColor': '#000',
-            'bulletsColor': '#000',
-            'position': 'right',
-            
-        },
-    });
+    if ($(window).width() > 1100){
+        $('#pagepiling').pagepiling({
+            anchors: ['home','aboutme','schoolprojects','schoolexercises','timelapse','contact'],
+            verticalCentered: false,
+            navigation: {
+                'textColor': '#000',
+                'bulletsColor': '#000',
+                'position': 'right',
+                
+            },
+        });
+}
 
 
 
@@ -22,8 +23,20 @@ $( document ).ready(function() {
         vertical: true,
         verticalSwiping: true,
         arrows: true,
-        prevArrow: $('.customback'),
-        nextArrow: $('.customnext')
+        prevArrow: $('.customback1'),
+        nextArrow: $('.customnext1')
+    })
+
+    $('.slickwrapper2').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 1,
+        slidesToScroll: 3,
+        vertical: true,
+        verticalSwiping: true,
+        arrows: true,
+        prevArrow: $('.customback2'),
+        nextArrow: $('.customnext2')
     })
 
 
@@ -37,6 +50,12 @@ $( document ).ready(function() {
         $('.expendtext').text("school projects")
         $('.navbar').toggleClass("nobg")
     })
+    $('.schoolexerciseslink').hover(function() {
+        $('.expendbar').toggleClass("expended")
+        $('.expendtext').text("school exercises")
+        $('.navbar').toggleClass("nobg")
+    })
+
     $('.timelink').hover(function() {
         $('.expendbar').toggleClass("expended")
         $('.expendtext').text("timeline")
@@ -48,6 +67,7 @@ $( document ).ready(function() {
         $('.navbar').toggleClass("nobg")
     })
 
+    
 
 
 

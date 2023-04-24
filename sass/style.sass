@@ -18,6 +18,20 @@ $mainblue: #2854a1
     margin-top: 300px !important
     margin-left: -50px !important
 
+.mobileshow
+    height: 0vh
+    width: 0vw
+    font-family: Poppins
+    background-color: $whitebg1
+    font-size: 40px
+    
+
+@media(max-width: 1100px) 
+    .mobileshow
+        height: 100vh
+        width: 100vw
+
+
 body
     margin: 0
     .navbar2
@@ -54,6 +68,9 @@ body
 
 html
     scroll-behavior: smooth
+
+.section
+    overflow: hidden
 
 .homepage
     //width: 100%
@@ -213,6 +230,14 @@ html
                 margin: 20px 0
                 height: 600px
                 background-color: $darkcolor1
+                text-align: center
+                .projectcontent
+                    display: flex
+                    justify-content: space-evenly
+                    align-items: center
+                    align-content: center
+                    p
+                        width: 300px
 
         .leftblock
             width: 25%
@@ -240,7 +265,64 @@ html
 
                 
 
+.schoolexercises
+    background-color: $darkercolor
+    h2
+        font-size: 70px 
+        color: $whitebg1 
+        margin: 0
+        border-left: 10px $mainblue solid
+        font-family: Poppins
+        margin-left: 10px
 
+    .contentwrapper
+        display: flex
+        flex-direction: row
+        flex-wrap: nowrap
+        justify-content: center
+        align-items: center
+        align-content: stretch
+
+        .slickwrapper2
+            width: 65%
+            .slick-arrow
+                margin-left: -100px
+            .slick-prev
+            .project
+                margin: 20px 0
+                height: 600px
+                background-color: $darkcolor1
+                text-align: center
+                .projectcontent
+                    display: flex
+                    justify-content: space-evenly
+                    align-items: center
+                    align-content: center
+                    p
+                        width: 300px
+
+        .rightblock
+            width: 25%
+            height: 400px
+            color: $whitebg1
+            display: flex
+            flex-direction: row
+            flex-wrap: nowrap
+            justify-content: space-around
+            align-items: center
+            align-content: center
+            p
+                width: 60%
+            .customnext
+
+            .customback
+
+            button
+                width: 50px
+                height: 50px
+                
+                background-color: $darkcolor1
+                border: 0
 
 
 

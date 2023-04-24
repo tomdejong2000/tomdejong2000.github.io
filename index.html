@@ -17,6 +17,10 @@
     <script src="https://kit.fontawesome.com/26f71ba90b.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="mobileshow">
+        Mobile site in development.
+        Please open on desktop.
+    </div>
 
     <div id="pagepiling">
     <div class="section homepage">
@@ -30,7 +34,8 @@
             <div class="navbar">
                 <a class="aboutmelink" href=#aboutme>about me</a>
                 <a class="schoollink" href=#schoolprojects>school projects</a>
-                <a class="timelink" href=#timelapse>time line</a>
+                <a class="schoolexerciseslink" href=#schoolexercises>school exercises</a>
+                <a class="timelink" href=#timelapse>time line (W.I.P)</a>
                 <a class="contactlink" href=#contact>contact</a>
 
             </div>
@@ -46,6 +51,7 @@
             <a class="homelink" href="#home">home</a>
             <a class="aboutmelink" href=#aboutme>about me</a>
             <a class="schoollink" href=#schoolprojects>school projects</a>
+            <a class="exerciseslink" href=#schoolexercises>school exercises</a>
             <a class="timelink" href=#timelapse>time line</a>
             <a class="contactlink" href=#contact>contact</a>
 
@@ -78,6 +84,7 @@
             <a class="homelink" href="#home">home</a>
             <a class="aboutmelink" href=#aboutme>about me</a>
             <a class="schoollink" href=#schoolprojects>school projects</a>
+            <a class="exerciseslink" href=#schoolexercises>school exercises</a>
             <a class="timelink" href=#timelapse>time line</a>
             <a class="contactlink" href=#contact>contact</a>
 
@@ -89,18 +96,188 @@
             <p>During the 2 years of my study I have done several group project for either external clients or teacher assignments.
                 The projects last between 8 and 16 weeks, a project group consist of 2 to 4 students. </p>
             <div class="buttonwrapper">
-                <button class="customnext"><i class="fa-solid fa-arrow-up"></i></button>
-            <button class="customback"><i class="fa-solid fa-arrow-down"></i></button>
+                <button class="customback1"><i class="fa-solid fa-arrow-up"></i></button>
+            <button class="customnext1"><i class="fa-solid fa-arrow-down"></i></button>
         </div>
         </div>
             <div class=slickwrapper>
-                <div class="project projec1">project1 <h3>dit is test</h3></div>
-                <div class="project projec2">project2</div>
-                <div class="project projec34">project3</div>
-                <div class="project projec56">project5</div>
-                <div class="project projec78">project7</div>           
+                <div class="project project1">
+                    <h3>Project 1: the elevator</h3>
+                    <div class="projectcontent">
+                    <iframe width="856" height="481" src="https://www.youtube.com/embed/4fqj4qZFWrA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <p>The first project is an elevator made with arduino's and a dc motor that communicate with eachother through i2c wires. 
+                        The duration of the project was 8 weeks and the project group consisted of 3 students.</p>
+                </div>
+                </div>
+                <div class="project project2">
+                    <h3>Project 2: the ACM(automic container mover)</h3>
+                    <div class="projectcontent">
+                        <iframe width="856" height="481" src="https://www.youtube.com/embed/CvHdr9k3rw0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                    
+                        <p>The second project is an ACM or rather a automatic contrainer mover or how we like to call it a little car.
+                            It uses 4 dc motors and an esp32. It uses IR and ultrasonic sensors to navigate and has an webinterface to wirelessly controll it.
+                            The project lasted 8 week and the project group consisted of 2 students.
+                        </p>
+                    </div>
+                </div>
+                <div class="project project34">
+                    <h3>Project 3/4: the ATM</h3>
+                    <div class="projectcontent">
+                        <iframe width="856" height="481" src="https://www.youtube.com/embed/Owp5_1LFRZ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                    
+                        <p>The last project of the first year was the ATM. It communicates with ATMs from other project groups using everyones self made API's. It uses an rfid scanner, thermal priner, touchscreen, numpad and is accessible for blind people.
+                            It lasted about 12 weeks and the project group consisted of 4 students.
+                        </p>
+                </div>
+                </div>
+                <div class="project project56">
+                    <h3>Project 56: IOT development kit</h3>
+                    <div class="projectcontent">
+                        <iframe width="856" height="481" src="https://www.youtube.com/embed/uWSA2BSlunI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                    
+                        <p>The first project of the second year was the IOT development kit or rather a selfdriving hoverboard thats able to transport items.
+                            The goal for this project was to create a solution for markets to automatically transport left over items at the end of each day.
+                            We used IR sensors for the surrounding detection and a combination of a digital compas, lora, and gps modules to navigate itself.
+                            This project lasted 16 weeks and the project group consisted of 4 students.
+                        </p>
+                </div>
+                </div>
+                <div class="project project78"><h3>Project 78: Sensor solution for windtunnel</h3>
+                    <div class="projectcontent">
+                        <iframe width="856" height="481" src="https://www.youtube.com/embed/t5uEjKGhOqI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                    
+                        <p>The current project I'm working on with my project group is the Sensor solution for windtunnels.
+                            In this project we use a windsensor to wirelessly send data to a webapp. We do this to help analysts to analyze the behaviour of wind and sand around miniature dunes inside a windtunnel made by in previous project by students. 
+                            We are currently about halfway through this 12 week project in a project group of 4 students.</p></div>           
+            </div>
             </div>
         </div>
+    </div>
+
+    <div id="schoolexercises" class="section schoolexercises">
+        <div class="navbar2">
+            <a class="homelink" href="#home">home</a>
+            <a class="aboutmelink" href=#aboutme>about me</a>
+            <a class="schoollink" href=#schoolprojects>school projects</a>
+            <a class="exerciseslink" href=#schoolexercises>school exercises</a>
+            <a class="timelink" href=#timelapse>time line</a>
+            <a class="contactlink" href=#contact>contact</a>
+
+        </div>
+        <h2>School exercises</h2>
+        <div class="contentwrapper">
+            <div class="contentwrapper">
+                <div class=slickwrapper2>
+                    <div class="project">    
+                        <h3>Heart rate and blood pressure sensor</h3>
+                        <div class="projectcontent">
+                            <p>A small project for class hardware and sensor calibration/configuration.
+                                It detects your heart rate and blood pressure and visualizes it using LED's 
+                            </p>
+                                <iframe width="856" height="481" src="https://www.youtube.com/embed/47PiX-6D5RA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                        
+                        </div>
+                    </div>
+                    <div class="project">
+                        <h3>Computer graphics 2</h3>
+                        <div class="projectcontent">
+                            <p>Visual of 2 planets using openGL for the class computer graphics
+                            </p>
+                            <iframe width="856" height="481" src="https://www.youtube.com/embed/t1sIg7ol7xI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                        
+                        </div>
+                        </div>
+                    
+                    <div class="project">
+                        <h3>Computer graphics 1</h3>
+                        <div class="projectcontent">
+                            <p>Visual of a well in a grass field using blender for the class computer graphics
+                            </p>
+                            <iframe width="856" height="481" src="https://www.youtube.com/embed/PIfPztnezCc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                    
+                        </div>
+
+                    </div>
+
+                    <div class="project">
+                        <h3>Programming 5</h3>
+                        <div class="projectcontent">
+                            <p>Raytracer in c++ 
+                                <a href="https://github.com/tomdejong2000/schoolprogrammeren/tree/main/5">github</a>
+                            </p>
+                            <img width="856" height="481" src="img/raytracer.jpg"> 
+                        </div>
+
+                    </div>
+
+                    <div class="project">
+                        <h3>Programming 4</h3>
+                        <div class="projectcontent">
+                            <p>OOP Administration in Java
+                                <a href="https://github.com/tomdejong2000/schoolprogrammeren/tree/main/4">github</a>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project">
+                        <h3>Programming 3</h3>
+                        <div class="projectcontent">
+                            <p>OOP multi threading haven simulation.
+                                <a href="https://github.com/tomdejong2000/schoolprogrammeren/tree/main/3">github</a>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project">
+                        <h3>Programming 2</h3>
+                        <div class="projectcontent">
+                            <p>Custom OOP linkedlist in Java
+                                <a href="https://github.com/tomdejong2000/schoolprogrammeren/tree/main/2/programmeren2%20Tom%20de%20Jong">github</a>
+                            </p>
+  
+                        </div>
+
+                    </div>
+
+                    <div class="project">
+                        <h3>Programming 1</h3>
+                        <div class="projectcontent">
+                            <p>2d array graphic in C <a href="https://github.com/tomdejong2000/schoolprogrammeren/tree/main/1/eindopdracht">github</a>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project">
+                        <h3>Simulation</h3>
+                        <div class="projectcontent">
+                            <p>3d Simulation of airport transportation I made for the class Modeling and simulation.
+                            </p>
+                            <iframe width="856" height="481" src="https://www.youtube.com/embed/9lsQWQe7xtE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+                    </div>
+                <div class=rightblock>
+                    <div class="buttonwrapper">
+                        <button class="customback2"><i class="fa-solid fa-arrow-up"></i></button>
+                        <button class="customnext2"><i class="fa-solid fa-arrow-down"></i></button>
+                    </div>
+                    <p>Here are some smaller projects and exercises I have done during non project class</p>
+                    
+                </div>
+
+
+            </div>
+        
+        </div>
+
+
     </div>
 
     <div id="timelapse" class="section timelapse">
@@ -108,6 +285,7 @@
             <a class="homelink" href="#home">home</a>
             <a class="aboutmelink" href=#aboutme>about me</a>
             <a class="schoollink" href=#schoolprojects>school projects</a>
+            <a class="exerciseslink" href=#schoolexercises>school exercises</a>
             <a class="timelink" href=#timelapse>time line</a>
             <a class="contactlink" href=#contact>contact</a>
 
@@ -117,12 +295,13 @@
         </div>
 
         <h2>timelapse</h2>
+        w.i.p.
         <svg class="background">
-            <rect id="rect1" class="rect1"/>
+            <!-- <rect id="rect1" class="rect1"/> -->
 
             <line x1="50" y1="400" x2="1900" y2="400" class="line1"/>
 
-            <circle class="circle1"/>
+            <!-- <circle class="circle1"/> -->
 
 
 
@@ -139,10 +318,10 @@
         <h2>CONTACT ME :)</h2>
         <div class="linkswrapper">
             <p class="email">tomdejong2000@gmail.com</p>
-            <p class="github">githublink</p>
-            <p class="linkedin">linkedinlink</p>
+            <a href="https://github.com/tomdejong2000">GITHUB</a>
+            
         </div>
-        <a href="#home"><div >up</div></a>
+        <a href="#home"><div >back up</div></a>
     </div>
     </div>
 
