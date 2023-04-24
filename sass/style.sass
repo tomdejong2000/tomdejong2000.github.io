@@ -30,7 +30,8 @@ $mainblue: #2854a1
     .mobileshow
         height: 100vh
         width: 100vw
-
+a
+    color:$mainblue
 
 body
     margin: 0
@@ -85,6 +86,9 @@ html
     .textwrapper
         height: 50vh
         width: 100%
+        font-family: poppins
+        font-size: 13px
+        font-weight: 900
         
         .name
             width: 100%
@@ -155,6 +159,8 @@ html
     //height: 100vh
     background-color: $darkcolor1
     //position: relative
+    .hoverme
+        margin-left: 18%
     
     h2
         font-size: 100px 
@@ -173,7 +179,7 @@ html
         align-content: center
         width: 70%
         margin: auto
-
+        font-family: Poppins
         .text
             color: $whitebg1
             
@@ -195,12 +201,62 @@ html
             align-content: center
             width: 100%
             .skillblock
+                // animation: myAnim 2s ease 0s infinite normal forwards
                 width: 300px
                 height: 300px
                 color: $whitebg1
                 background-color: $mainblue
-                text-align: center
+                display: flex
+                flex-wrap: norwrap
+                flex-direction: column
+                justify-content: center
+                align-content: center
+                align-items: center
+                .expand
+                            height: 150px
+                ul
+                    padding: 0
+                    overflow: hidden
+                    height: 0px
+                    transition-duration: 0.3s
+                    li
+                        list-style-type: none
+                        
+                
+                h3
+                    font-size: 40px
+                    margin: 0
+                    text-align: center
         
+
+
+@keyframes myAnim 
+    0%
+    100% 
+        transform: translateX(0%)
+        transform-origin: 50% 50%
+	
+
+    15% 
+        transform: translateX(-30px) rotate(-6deg)
+	
+
+    30% 
+        transform: translateX(15px) rotate(6deg)
+	
+
+    45% 
+        transform: translateX(-15px) rotate(-3.6deg)
+	
+
+    60% 
+        transform: translateX(9px) rotate(2.4deg)
+	
+
+    75% 
+        transform: translateX(-6px) rotate(-1.2deg)
+	
+    
         
 
 .projectwrapper
@@ -220,6 +276,8 @@ html
         justify-content: center
         align-items: center
         align-content: stretch
+        font-family: poppins
+        color: $whitebg1
 
         .slickwrapper
             width: 65%
@@ -282,6 +340,8 @@ html
         justify-content: center
         align-items: center
         align-content: stretch
+        font-family: poppins
+        color: $whitebg1
 
         .slickwrapper2
             width: 65%
@@ -381,6 +441,7 @@ html
 
 
 .contact
+    font-family: poppins
     width: 100%
     height: 100vh
     background-color: $darkcolor1  
@@ -389,10 +450,24 @@ html
     flex-direction: column
     justify-content: space-evenly
     align-items: center
+    h2
+        font-size: 40px
+        font-weight: 900
+        display: inline-flex
+        .me
+            background-color: $mainblue
+            padding: 0 10px
+    .up
+        font-size: 50px
+        color: $darkercolor
     .linkswrapper
         display: flex
         width: 100%
+        flex-direction: column
         justify-content: space-evenly
         align-items: center
+        font-size: 50px
+        a
+            color: $mainblue
 
     

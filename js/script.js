@@ -67,6 +67,12 @@ $( document ).ready(function() {
         $('.navbar').toggleClass("nobg")
     })
 
+
+    $('.skillblock').hover(function(){
+        $(this).children("ul").toggleClass("expand")
+    })
+    
+
     
 
 
