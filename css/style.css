@@ -142,11 +142,20 @@ html {
   font-size: 150px;
 }
 
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .aboutme {
   background-color: #222222;
 }
 .aboutme .hoverme {
   margin-left: 18%;
+  font-family: Poppins;
 }
 .aboutme h2 {
   font-size: 100px;
@@ -156,27 +165,47 @@ html {
   font-family: Poppins;
   margin-left: 10px;
   height: 120px;
+  margin-bottom: 0;
 }
 .aboutme .contentwrapper {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   align-content: center;
   width: 70%;
   margin: auto;
   font-family: Poppins;
+  height: 600px;
 }
 .aboutme .contentwrapper .text {
   color: #cacfd6;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   align-content: center;
   width: 100%;
+}
+.aboutme .contentwrapper .text .mebackground {
+  height: 292px;
+  width: 300px;
+  margin-left: 9%;
+  display: none;
+  position: relative;
+  overflow: hidden;
+}
+.aboutme .contentwrapper .text .mebackground img {
+  position: absolute;
+  width: 300px;
+  height: auto;
+}
+.aboutme .contentwrapper .text .mebackground .lazer {
+  animation: spin 2s linear infinite;
+  height: 330px;
+  width: 300px;
 }
 .aboutme .contentwrapper .skillwrapper {
   display: flex;
@@ -217,27 +246,6 @@ html {
   text-align: center;
 }
 
-@keyframes myAnim {
-  100% {
-    transform: translateX(0%);
-    transform-origin: 50% 50%;
-  }
-  15% {
-    transform: translateX(-30px) rotate(-6deg);
-  }
-  30% {
-    transform: translateX(15px) rotate(6deg);
-  }
-  45% {
-    transform: translateX(-15px) rotate(-3.6deg);
-  }
-  60% {
-    transform: translateX(9px) rotate(2.4deg);
-  }
-  75% {
-    transform: translateX(-6px) rotate(-1.2deg);
-  }
-}
 .projectwrapper {
   background-color: rgb(20, 19, 19);
 }
@@ -299,6 +307,10 @@ html {
   height: 50px;
   background-color: #222222;
   border: 0;
+}
+.projectwrapper .contentwrapper .leftblock button:hover {
+  background-color: #2854a1;
+  color: white;
 }
 
 .schoolexercises {
@@ -362,6 +374,10 @@ html {
   height: 50px;
   background-color: #222222;
   border: 0;
+}
+.schoolexercises .contentwrapper .rightblock button:hover {
+  background-color: #2854a1;
+  color: white;
 }
 
 .timelapse {
