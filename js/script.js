@@ -2,7 +2,7 @@ $( document ).ready(function() {
     console.log( "ready!" );
     if ($(window).width() > 1100){
         $('#pagepiling').pagepiling({
-            anchors: ['home','aboutme','schoolprojects','schoolexercises','timelapse','contact'],
+            anchors: ['home','aboutme','schoolprojects','schoolprojects2','schoolexercises','contact'],
             verticalCentered: false,
             navigation: {
                 'textColor': '#000',
@@ -39,6 +39,17 @@ $( document ).ready(function() {
         nextArrow: $('.customnext2')
     })
 
+    $('.slickwrapper3').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 1,
+        slidesToScroll: 3,
+        vertical: true,
+        verticalSwiping: true,
+        arrows: true,
+        prevArrow: $('.customback3'),
+        nextArrow: $('.customnext3')
+    })
 
     $('.aboutmelink').hover(function() {
         $('.expendbar').toggleClass("expended")

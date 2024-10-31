@@ -250,7 +250,7 @@ html {
   background-color: rgb(20, 19, 19);
 }
 .projectwrapper h2 {
-  font-size: 70px;
+  font-size: 60px;
   color: #cacfd6;
   margin: 0;
   border-left: 10px #2854a1 solid;
@@ -288,6 +288,27 @@ html {
 .projectwrapper .contentwrapper .slickwrapper .project .projectcontent p {
   width: 300px;
 }
+.projectwrapper .contentwrapper .slickwrapper3 {
+  width: 65%;
+}
+.projectwrapper .contentwrapper .slickwrapper3 .slick-arrow {
+  margin-left: -100px;
+}
+.projectwrapper .contentwrapper .slickwrapper3 .project {
+  margin: 20px 0;
+  height: 600px;
+  background-color: #222222;
+  text-align: center;
+}
+.projectwrapper .contentwrapper .slickwrapper3 .project .projectcontent {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+.projectwrapper .contentwrapper .slickwrapper3 .project .projectcontent p {
+  width: 300px;
+}
 .projectwrapper .contentwrapper .leftblock {
   width: 25%;
   height: 400px;
@@ -317,7 +338,7 @@ html {
   background-color: rgb(20, 19, 19);
 }
 .schoolexercises h2 {
-  font-size: 70px;
+  font-size: 60px;
   color: #cacfd6;
   margin: 0;
   border-left: 10px #2854a1 solid;
