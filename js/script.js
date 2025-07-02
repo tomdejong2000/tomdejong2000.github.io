@@ -53,7 +53,7 @@ $( document ).ready(function() {
 
     $('.aboutmelink').hover(function() {
         $('.expendbar').toggleClass("expended")
-        $('.expendtext').text("aboutme")
+        $('.expendtext').text("about me")
         $('.navbar').toggleClass("nobg")
     })
     $('.schoollink').hover(function() {

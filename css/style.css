@@ -172,17 +172,15 @@ html {
   background-color: #222222;
 }
 .aboutme .hoverme {
-  margin-left: 18%;
   font-family: Poppins;
 }
 .aboutme h2 {
-  font-size: 100px;
+  font-size: 8vh;
   color: #cacfd6;
   border-bottom: 8px solid #2854a1;
-  width: 490px;
+  width: 40vh;
   font-family: Poppins;
   margin-left: 10px;
-  height: 120px;
   margin-bottom: 0;
 }
 .aboutme .contentwrapper {
@@ -195,7 +193,7 @@ html {
   width: 70%;
   margin: auto;
   font-family: Poppins;
-  height: 600px;
+  height: 75vh;
 }
 .aboutme .contentwrapper .text {
   color: #cacfd6;
@@ -235,8 +233,8 @@ html {
   width: 100%;
 }
 .aboutme .contentwrapper .skillwrapper .skillblock {
-  width: 300px;
-  height: 300px;
+  width: 20vw;
+  height: 20vw;
   color: #cacfd6;
   background-color: #2854a1;
   display: flex;
@@ -257,9 +255,10 @@ html {
 }
 .aboutme .contentwrapper .skillwrapper .skillblock ul li {
   list-style-type: none;
+  font-size: 1vw;
 }
 .aboutme .contentwrapper .skillwrapper .skillblock h3 {
-  font-size: 40px;
+  font-size: 2vw;
   margin: 0;
   text-align: center;
 }
@@ -268,7 +267,7 @@ html {
   background-color: rgb(20, 19, 19);
 }
 .projectwrapper h2 {
-  font-size: 60px;
+  font-size: 3vw;
   color: #cacfd6;
   margin: 0;
   border-left: 10px #2854a1 solid;
@@ -389,7 +388,7 @@ html {
   background-color: rgb(20, 19, 19);
 }
 .schoolexercises h2 {
-  font-size: 60px;
+  font-size: 3vw;
   color: #cacfd6;
   margin: 0;
   border-left: 10px #2854a1 solid;
